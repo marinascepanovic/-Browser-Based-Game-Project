@@ -104,58 +104,6 @@ const quizData = {
     }
   ],
 
-  "Movies": [
-    {
-      question: "Who directed the movie 'Inception'?",
-      image: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Christopher_Nolan_Cannes_2018.jpg",
-      answers: [
-        { text: "Christopher Nolan", correct: true },
-        { text: "Steven Spielberg", correct: false },
-        { text: "James Cameron", correct: false },
-        { text: "Quentin Tarantino", correct: false }
-      ]
-    },
-    {
-      question: "Which movie won Best Picture at the Oscars in 2020?",
-      image: "https://upload.wikimedia.org/wikipedia/en/5/53/Parasite_%282019_film%29.png",
-      answers: [
-        { text: "Joker", correct: false },
-        { text: "Parasite", correct: true },
-        { text: "1917", correct: false },
-        { text: "Ford v Ferrari", correct: false }
-      ]
-    },
-    {
-      question: "Which actor played the Joker in 'The Dark Knight'?",
-      image: "https://upload.wikimedia.org/wikipedia/en/8/8a/Dark_Knight.jpg",
-      answers: [
-        { text: "Heath Ledger", correct: true },
-        { text: "Joaquin Phoenix", correct: false },
-        { text: "Jared Leto", correct: false },
-        { text: "Jack Nicholson", correct: false }
-      ]
-    },
-    {
-      question: "What is the highest-grossing movie of all time (as of 2025)?",
-      image: "https://upload.wikimedia.org/wikipedia/en/f/f9/Avengers_Endgame_poster.jpg",
-      answers: [
-        { text: "Avengers: Endgame", correct: true },
-        { text: "Avatar", correct: false },
-        { text: "Titanic", correct: false },
-        { text: "The Lion King", correct: false }
-      ]
-    },
-    {
-      question: "What movie is this quote from: 'I'll be back'?",
-      image: "https://upload.wikimedia.org/wikipedia/en/7/70/Terminator1984movieposter.jpg",
-      answers: [
-        { text: "The Terminator", correct: true },
-        { text: "Die Hard", correct: false },
-        { text: "RoboCop", correct: false },
-        { text: "Predator", correct: false }
-      ]
-    }
-  ],
 };
 
 const categories = Object.keys(quizData);
@@ -225,7 +173,6 @@ function startLevel() {
     levelMessage.classList.add("hidden");
     quizContainer.classList.remove("hidden");
     showQuestion();
-    startTimer();
   }, 2000); 
 }
 
